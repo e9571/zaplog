@@ -5,7 +5,7 @@ import (
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
 	"github.com/e9571/lib1"
-	"go.uber.org/models"
+	//"go.uber.org/models"
 	"os"
 )
 
@@ -108,11 +108,11 @@ func Log_init(Service string,Value string,log_mode string,Server,Name,Program,Pr
 	//list=append(list,"123")
 
 	//设置日志模式
-	models.Log_send=lib1.Parse_int(log_mode)
-	models.Log_http_server=Server
-	models.Log_name=Name
-	models.Log_program=Program
-	models.Log_program_id=Program_id
+	//models.Log_send=lib1.Parse_int(log_mode)
+	//models.Log_http_server=Server
+	//models.Log_name=Name
+	//models.Log_program=Program
+	//models.Log_program_id=Program_id
 
 	logger.Info("log 初始化成功")
 
