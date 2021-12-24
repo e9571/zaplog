@@ -48,9 +48,6 @@ func Log_init(Service string,Value string,log_mode string,Server,Name,Program,Pr
 
 	var hook lumberjack.Logger
 
-
-	//Path_value,_=lib1.Create_path_os()
-
 	//自动新建文件夹 获取当前目录
 	//超级定位 程序全路径形式
 	path_exe,_:=lib1.Create_path_os()
@@ -102,10 +99,6 @@ func Log_init(Service string,Value string,log_mode string,Server,Name,Program,Pr
 	// 构造日志
 	logger := zap.New(core, caller, development, filed)
 
-	//var list []string
-
-	//list=append(list,"123")
-	//list=append(list,"123")
 
 	//设置日志模式
 	//models.Log_send=lib1.Parse_int(log_mode)
