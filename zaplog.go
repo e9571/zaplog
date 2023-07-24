@@ -54,7 +54,7 @@ func Log_init(Service string,Value string,log_mode string,Server,Name,Program,Pr
 	lib1.Create_New_File(path_exe+"/log")
 
 
-	Path_value=lib1.Create_Format_time("flie_time")[0:13]
+	Path_value=lib1.Create_Format_time("time_str")[0:13]
 
 	hook = lumberjack.Logger{
 		Filename:   path_exe+"/log/" + Path_value + ".log", // 日志文件路径
